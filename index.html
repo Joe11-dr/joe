@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloomhaven Care - Premium Home Healthcare Services in Nairobi</title>
+    <meta name="description" content="Compassionate home healthcare services in Nairobi. Maternal care, elderly care, post-operative care, and more. 24/7 support from qualified nurses.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">🌸</div>
+                <div class="logo-text">
+                    <h1>Bloomhaven Care</h1>
+                    <p>Premium Home Healthcare</p>
+                </div>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#why" class="nav-link">Why Us</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Emergency Banner -->
+    <div class="emergency-banner">
+        <div class="emergency-icon">🚨</div>
+        <div class="emergency-text">24/7 Emergency Support Available | Call Us Now</div>
+        <button class="btn btn-emergency" onclick="openPhoneOptions()">📞 Call Now</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-headline">Compassionate Care, Right at Your Doorstep</h1>
+            <p class="hero-subtitle">
+                Experience premium, personalized home healthcare services delivered by qualified African nurses and caregivers. 
+                From maternal care to elderly support, we bring medical excellence and emotional warmth to your home.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.querySelector('.contact').scrollIntoView({behavior: 'smooth'})">
+                    📅 Book a Consultation
+                </button>
+                <button class="btn btn-secondary" onclick="openPhoneOptions()">
+                    📞 Call Us Now
+                </button>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <div class="image-placeholder">
+                <div style="font-size: 4rem; margin-bottom: 10px;">👩‍⚕️</div>
+                <p>African Nurse Providing Care</p>
+                <p style="font-size: 0.8rem; color: var(--accent-gold); margin-top: 20px;">Premium Healthcare Imagery</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Bloomhaven Care</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission & Vision</h3>
+                    <p>
+                        At Bloomhaven Care, we believe that quality healthcare should be accessible, compassionate, and delivered with dignity. 
+                        We have revolutionized home healthcare in Nairobi by bringing professional, qualified nurses and caregivers directly to your doorstep.
+                    </p>
+                    <p>
+                        Our team of experienced African nurses understands the cultural nuances and personal needs of our community. 
+                        We combine medical expertise with genuine empathy to provide healthcare that feels like family care.
+                    </p>
+                    <p>
+                        Whether you need post-operative support, maternal care, elderly companionship, or chronic disease management, 
+                        Bloomhaven Care is your trusted partner in wellness.
+                    </p>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-card">
+                        <h3>500+</h3>
+                        <p>Happy Families Served</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>50+</h3>
+                        <p>Qualified Nurses</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>15+</h3>
+                        <p>Years of Excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Premium Services</h2>
+            <p class="section-intro">Comprehensive healthcare solutions tailored to your specific needs</p>
+            
+            <div class="services-grid">
+                <!-- Maternal & Newborn Care -->
+                <div class="service-card">
+                    <span class="service-icon">👶</span>
+                    <h3>Maternal & Newborn Care</h3>
+                    <p>Prenatal support, postpartum care, and newborn nursing with compassionate attention to mother and baby wellness.</p>
+                    <ul class="service-features">
+                        <li>✓ Prenatal monitoring</li>
+                        <li>✓ Postpartum recovery support</li>
+                        <li>✓ Newborn care & feeding assistance</li>
+                        <li>✓ Lactation support</li>
+                    </ul>
+                </div>
+                
+                <!-- Elderly Care -->
+                <div class="service-card">
+                    <span class="service-icon">👴</span>
+                    <h3>Elderly (Geriatric) Care</h3>
+                    <p>Compassionate care for seniors with mobility assistance, medication management, and emotional support.</p>
+                    <ul class="service-features">
+                        <li>✓ Daily living assistance</li>
+                        <li>✓ Medication management</li>
+                        <li>✓ Fall prevention</li>
+                        <li>✓ Companionship & wellness</li>
+                    </ul>
+                </div>
+                
+                <!-- Post-Operative Care -->
+                <div class="service-card">
+                    <span class="service-icon">🏥</span>
+                    <h3>Post-Operative Care</h3>
+                    <p>Professional recovery support following surgery with wound care, pain management, and rehabilitation.</p>
+                    <ul class="service-features">
+                        <li>✓ Surgical recovery support</li>
+                        <li>✓ Medication administration</li>
+                        <li>✓ Wound dressing & care</li>
+                        <li>✓ Physical rehabilitation</li>
+                    </ul>
+                </div>
+                
+                <!-- Fracture & Spinal Injury Care -->
+                <div class="service-card">
+                    <span class="service-icon">🦴</span>
+                    <h3>Fracture & Spinal Injury Care</h3>
+                    <p>Specialized care for fractures and spinal injuries with mobility support and rehabilitation therapy.</p>
+                    <ul class="service-features">
+                        <li>✓ Mobility assistance</li>
+                        <li>✓ Physical therapy support</li>
+                        <li>✓ Pain management</li>
+                        <li>✓ Recovery monitoring</li>
+                    </ul>
+                </div>
+                
+                <!-- Wound Care -->
+                <div class="service-card">
+                    <span class="service-icon">🩹</span>
+                    <h3>Wound Care Management</h3>
+                    <p>Expert wound dressing, infection prevention, and advanced healing support for chronic and acute wounds.</p>
+                    <ul class="service-features">
+                        <li>✓ Wound assessment</li>
+                        <li>✓ Sterile dressing changes</li>
+                        <li>✓ Infection prevention</li>
+                        <li>✓ Healing promotion</li>
+                    </ul>
+                </div>
+                
+                <!-- Palliative Care -->
+                <div class="service-card">
+                    <span class="service-icon">💗</span>
+                    <h3>Palliative Care</h3>
+                    <p>Dignified, compassionate end-of-life care focused on comfort, peace, and family support.</p>
+                    <ul class="service-features">
+                        <li>✓ Pain & symptom management</li>
+                        <li>✓ Emotional support</li>
+                        <li>✓ Family counseling</li>
+                        <li>✓ Dignity & comfort care</li>
+                    </ul>
+                </div>
+                
+                <!-- Chronic Disease Management -->
+                <div class="service-card">
+                    <span class="service-icon">⚕️</span>
+                    <h3>Chronic Disease Management</h3>
+                    <p>Ongoing support for diabetes, hypertension, asthma, and other chronic conditions with regular monitoring.</p>
+                    <ul class="service-features">
+                        <li>✓ Disease monitoring</li>
+                        <li>✓ Medication management</li>
+                        <li>✓ Lifestyle education</li>
+                        <li>✓ Regular health checks</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose" id="why">
+        <div class="container">
+            <h2>Why Choose Bloomhaven Care?</h2>
+            <p class="section-intro">Experience healthcare that truly cares</p>
+            
+            <div class="why-grid">
+                <div class="why-card">
+                    <span class="why-icon">👨‍⚕️</span>
+                    <h3>Qualified Nurses</h3>
+                    <p>Our team consists of highly trained, licensed nurses with extensive experience in home healthcare and compassionate patient care.</p>
+                </div>
+                
+                <div class="why-card">
+                    <span class="why-icon">🎯</span>
+                    <h3>Personalized Care Plans</h3>
+                    <p>We create customized care plans tailored to your specific medical needs, lifestyle, and personal preferences.</p>
+                </div>
+                
+                <div class="why-card">
+                    <span class="why-icon">💰</span>
+                    <h3>Affordable & Reliable</h3>
+                    <p>Premium healthcare at competitive prices with transparent pricing and flexible payment options for all budgets.</p>
+                </div>
+                
+                <div class="why-card">
+                    <span class="why-icon">🏠</span>
+                    <h3>Home Comfort & Dignity</h3>
+                    <p>Receive care in your own home where you feel most comfortable, maintaining your independence and personal dignity.</p>
+                </div>
+                
+                <div class="why-card">
+                    <span class="why-icon">24/7</span>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock availability for emergencies, consultations, and any healthcare concerns that arise at any time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>What Our Families Say</h2>
+            <p class="section-intro">Real stories from our valued patients and families</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Bloomhaven Care was there for us during our mother's recovery. The nurses were professional, 
+                        caring, and treated her with such dignity. We couldn't have done it without them."
+                    </p>
+                    <div class="testimonial-author">
+                        <p><strong>Margaret Ochieng</strong></p>
+                        <p class="author-role">Daughter & Caregiver</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "After my surgery, having a nurse at home made all the difference. They monitored my recovery with 
+                        precision and checked on me daily. Truly exceptional care!"
+                    </p>
+                    <div class="testimonial-author">
+                        <p><strong>David Kipchoge</strong></p>
+                        <p class="author-role">Post-Operative Patient</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "The maternal care they provided was outstanding. From pregnancy monitoring to postpartum support, 
+                        they were there every step of the way. Highly recommend!"
+                    </p>
+                    <div class="testimonial-author">
+                        <p><strong>Angela Kipronoh</strong></p>
+                        <p class="author-role">New Mother</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <p class="section-intro">Find answers to common questions about our services</p>
+            
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <span>How do I book a consultation?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Booking a consultation is easy! Simply fill out our contact form on this page, call us at +254 705 790 425, 
+                            or send us a message via WhatsApp. Our team will get back to you within 24 hours to discuss your healthcare needs 
+                            and create a customized care plan.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are your nurses qualified and licensed?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Yes! All our nurses are fully qualified, licensed, and registered with the Kenya Nursing Council. 
+                            They undergo continuous training and are background-checked. Your safety and quality care are our top priorities.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What areas do you serve?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            We currently serve Nairobi and surrounding areas within a 30km radius. This includes suburbs such as 
+                            Karen, Westlands, Kilimani, Langata, and others. Contact us to confirm if your location is within our service area.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What are your pricing options?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Our pricing is transparent and flexible. We offer hourly rates, daily packages, and monthly care plans. 
+                            Rates vary based on the type of care needed. Contact us for a detailed quote tailored to your specific requirements.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer 24/7 emergency support?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Absolutely! Our 24/7 support line is always available for emergencies, urgent consultations, and questions. 
+                            Call +254 705 790 425 or +254 717 715 039 at any time, day or night. We're here for you.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do you ensure patient privacy?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Patient privacy and confidentiality are sacred to us. We follow all healthcare regulations and data protection 
+                            laws. Your medical information is secure, encrypted, and only shared with authorized healthcare providers as needed for your care.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get in Touch With Us</h2>
+            <p class="section-intro">Let's discuss your healthcare needs and create a care plan for you</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h3>Call Us</h3>
+                        <p><a href="tel:+254705790425">+254 705 790 425</a></p>
+                        <p><a href="tel:+254717715039">+254 717 715 039</a></p>
+                        <p class="info-note">Available 24/7 for emergencies</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Service Areas</h3>
+                        <p><strong>Nairobi & Surrounding Areas</strong></p>
+                        <p>Serving within 30km radius of Nairobi</p>
+                        <p class="info-note">Request service availability for your location</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">💬</div>
+                        <h3>Quick Response</h3>
+                        <p>Average response time: <strong>2 hours</strong></p>
+                        <p><a href="https://wa.me/254705790425" target="_blank">WhatsApp us →</a></p>
+                        <p class="info-note">Fast, convenient communication</p>
+                    </div>
+                </div>
+                
+                <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                    <h3>Book Your Consultation</h3>
+                    <input type="text" placeholder="Your Full Name" required>
+                    <input type="email" placeholder="Your Email Address" required>
+                    <input type="tel" placeholder="Your Phone Number" required>
+                    <textarea rows="5" placeholder="Tell us about your healthcare needs..." required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message via WhatsApp 📲</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phone Options Modal -->
+    <div id="phoneModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePhoneOptions()">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Choose your preferred way to reach us:</p>
+            
+            <div class="phone-options">
+                <a href="tel:+254705790425" class="phone-btn">
+                    <span class="phone-icon">📞</span>
+                    <div>
+                        <div class="phone-number">+254 705 790 425</div>
+                        <small>Call us directly</small>
+                    </div>
+                </a>
+                
+                <a href="tel:+254717715039" class="phone-btn">
+                    <span class="phone-icon">📞</span>
+                    <div>
+                        <div class="phone-number">+254 717 715 039</div>
+                        <small>Alternative number</small>
+                    </div>
+                </a>
+                
+                <a href="https://wa.me/254705790425?text=Hi%20Bloomhaven%20Care%2C%20I%20need%20healthcare%20services" target="_blank" class="phone-btn whatsapp">
+                    <span class="phone-icon">💬</span>
+                    <div>
+                        <div class="phone-number">WhatsApp Us</div>
+                        <small>Message us on WhatsApp</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Bloomhaven Care</h3>
+                <p>
+                    Bringing premium, compassionate healthcare to your home. 
+                    We combine medical excellence with emotional warmth to provide care you can trust.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" title="Facebook">f</a>
+                    <a href="https://twitter.com" target="_blank" title="Twitter">𝕏</a>
+                    <a href="https://instagram.com" target="_blank" title="Instagram">📷</a>
+                    <a href="https://youtube.com" target="_blank" title="YouTube">▶️</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why">Why Choose Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#services">Maternal & Newborn Care</a></li>
+                    <li><a href="#services">Elderly (Geriatric) Care</a></li>
+                    <li><a href="#services">Post-Operative Care</a></li>
+                    <li><a href="#services">Fracture & Spinal Injury</a></li>
+                    <li><a href="#services">Wound Care</a></li>
+                    <li><a href="#services">Palliative Care</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Emergency Contact</h4>
+                <p><span class="emergency-contact">🚨 24/7 Available</span></p>
+                <p><a href="tel:+254705790425">+254 705 790 425</a></p>
+                <p><a href="tel:+254717715039">+254 717 715 039</a></p>
+                <p style="margin-top: 20px; font-style: italic; color: rgba(255,255,255,0.7);">
+                    "Care delivered with compassion, Excellence in every moment"
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bloomhaven Care. All rights reserved. | Privacy Policy | Terms of Service | Designed with ❤️ for African Healthcare</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
